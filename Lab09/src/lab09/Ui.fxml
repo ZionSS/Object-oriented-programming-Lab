@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab09.LoanCalculator">
+   <children>
+      <Button fx:id="loadBtn" layoutX="160.0" layoutY="311.0" mnemonicParsing="false" onAction="#loadAction" text="Load">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveBtn" layoutX="61.0" layoutY="311.0" mnemonicParsing="false" onAction="#saveAction" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="calculateBtn" layoutX="463.0" layoutY="311.0" mnemonicParsing="false" onAction="#calculateAction" text="Calculate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearBtn" layoutX="374.0" layoutY="311.0" mnemonicParsing="false" onAction="#clearAction" text="Clear">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField layoutX="48.0" layoutY="80.0" promptText="Annual Interest Rate :" style="-fx-background-color: null;" text="Annual Interest Rate :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="48.0" layoutY="120.0" style="-fx-background-color: null;" text="Number of Years :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="48.0" layoutY="160.0" style="-fx-background-color: null;" text="Loan Amount :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="48.0" layoutY="200.0" style="-fx-background-color: null;" text="Monthly Payment :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="48.0" layoutY="240.0" style="-fx-background-color: null;" text="Total Payment :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="annualInterestRate" layoutX="254.0" layoutY="80.0" onKeyTyped="#handle" prefHeight="40.0" prefWidth="305.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="numberOfYears" layoutX="254.0" layoutY="120.0" onKeyTyped="#handle" prefHeight="40.0" prefWidth="306.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="loanAmount" layoutX="254.0" layoutY="160.0" onKeyTyped="#handle" prefHeight="40.0" prefWidth="306.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="monthlyPayment" layoutX="254.0" layoutY="200.0" prefHeight="26.0" prefWidth="306.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="totalPayment" layoutX="254.0" layoutY="240.0" prefHeight="40.0" prefWidth="306.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
